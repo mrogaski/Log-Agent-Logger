@@ -18,7 +18,6 @@
 #
 
 use ExtUtils::MakeMaker;
-use Log::Agent;
 
 WriteMakefile(
     'NAME'	=> 'Log::Agent::Logger',
@@ -46,7 +45,7 @@ WriteMakefile(
 #
 sub build_pm_hash {
 	local *MANI;
-	open(MANI, "MANIFEST") || logdie "can't open MANIFEST: $!";
+	open(MANI, "MANIFEST") || die "can't open MANIFEST: $!";
 	local $_;
 	my @pm;
 	while (<MANI>) {
