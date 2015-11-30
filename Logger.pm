@@ -28,7 +28,8 @@ package Log::Agent::Logger;
 
 use vars qw($VERSION);
 
-$VERSION = '0.101';
+our $VERSION = '0.200';
+$VERSION = eval $VERSION;
 
 use Log::Agent;
 use Log::Agent::Formatting qw(tag_format_args);
