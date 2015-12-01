@@ -1,12 +1,11 @@
-.gitignore                       Git ignore file
-README                           The main README file
-MANIFEST                         This list
-CHANGELOG.md                     List of changes
-Makefile.PL                      Generic Makefile template
-Logger.pm                        Application logging interface
-patchlevel.h                     Records the current patchlevel
-t/basic.t                        Basic logging tests
-t/caller.t                       Test caller information
-t/code.pl                        Library for tests
-t/priority.t                     Test -priority settings
-t/tags.t                         Test log message tags
+Build.PL        Build script
+CHANGELOG.md    List of changes
+Logger.pm       Application logging interface
+Makefile.PL		  Makefile script
+MANIFEST			  This list
+README				  The main README file
+t/basic.t			  Basic logging tests
+t/caller.t		  Test caller information
+t/code.pl			  Library for tests
+t/priority.t	  Test -priority settings
+t/tags.t			  Test log message tags
