@@ -1,23 +1,16 @@
 #!./perl
-
+###########################################################################
 #
-# $Id: basic.t,v 0.1.1.1 2001/04/11 16:15:27 ram Exp $
+#   basic.t
 #
-#  Copyright (c) 2000, Raphael Manfredi
-#  
-#  You may redistribute only under the terms of the Artistic License,
-#  as specified in the README file that comes with the distribution.
+#   Copyright (C) 1999-2000 Raphael Manfredi.
+#   Copyright (C) 2015 Mark Rogaski, mrogaski@cpan.org;
+#   all rights reserved.
 #
-# HISTORY
-# $Log: basic.t,v $
-# Revision 0.1.1.1  2001/04/11 16:15:27  ram
-# patch1: now tests proper sprintf semantics in log arguments
+#   See the README file included with the
+#   distribution for license information.
 #
-# Revision 0.1  2000/11/06 20:14:13  ram
-# Baseline for first Alpha release.
-#
-# $EndLog$
-#
+##########################################################################
 
 print "1..13\n";
 
@@ -89,4 +82,3 @@ $log->notice("will NOT show at all");
 ok 13, !contains($file, "will NOT show");
 
 cleanlog;
-

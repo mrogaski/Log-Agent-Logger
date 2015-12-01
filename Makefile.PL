@@ -1,21 +1,16 @@
-# $Id: Makefile.PL,v 0.1.1.1 2001/04/11 16:14:30 ram Exp $
+#!./perl
+###########################################################################
 #
-#  Copyright (c) 2000, Raphael Manfredi
-#  
-#  You may redistribute only under the terms of the Artistic License,
-#  as specified in the README file that comes with the distribution.
+#   Makefile.PL
 #
-# HISTORY
-# $Log: Makefile.PL,v $
-# Revision 0.1.1.1  2001/04/11 16:14:30  ram
-# patch1: now depends on Getargs::Long
-# patch1: must use Log::Agent 0.208 or better
+#   Copyright (C) 1999-2000 Raphael Manfredi.
+#   Copyright (C) 2015 Mark Rogaski, mrogaski@cpan.org;
+#   all rights reserved.
 #
-# Revision 0.1  2000/11/06 20:14:13  ram
-# Baseline for first Alpha release.
+#   See the README file included with the
+#   distribution for license information.
 #
-# $EndLog$
-#
+##########################################################################
 
 use ExtUtils::MakeMaker;
 
@@ -27,9 +22,9 @@ WriteMakefile(
 		'Log::Agent'       => '0.208',
 	},
 	'PM' => build_pm_hash(),
-    'LIBS'	=> [''],		# e.g., '-lm' 
-    'DEFINE'	=> '',		# e.g., '-DHAVE_SOMETHING' 
-    'INC'	=> '',			# e.g., '-I/usr/include/other' 
+    'LIBS'	=> [''],		# e.g., '-lm'
+    'DEFINE'	=> '',		# e.g., '-DHAVE_SOMETHING'
+    'INC'	=> '',			# e.g., '-I/usr/include/other'
 	# 'PREFIX' => '/home/ram/usr/lib/site_perl',
 );
 
@@ -56,4 +51,3 @@ sub build_pm_hash {
 	my %pm = map { $_ => '$(INST_LIBDIR)/' . $_ } @pm;
 	return \%pm;
 }
-

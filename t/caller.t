@@ -1,26 +1,16 @@
 #!./perl
-
+###########################################################################
 #
-# $Id: caller.t,v 0.1.1.1 2001/04/11 16:15:54 ram Exp $
+#   caller.t
 #
-#  Copyright (c) 2000, Raphael Manfredi
-#  
-#  You may redistribute only under the terms of the Artistic License,
-#  as specified in the README file that comes with the distribution.
+#   Copyright (C) 1999-2000 Raphael Manfredi.
+#   Copyright (C) 2015 Mark Rogaski, mrogaski@cpan.org;
+#   all rights reserved.
 #
-# HISTORY
-# $Log: caller.t,v $
-# Revision 0.1.1.1  2001/04/11 16:15:54  ram
-# patch1: created
+#   See the README file included with the
+#   distribution for license information.
 #
-# Revision 0.2.1.1  2001/03/13 18:45:44  ram
-# patch2: test the ${line} variable substitution
-#
-# Revision 0.2  2000/11/06 19:30:33  ram
-# Baseline for second Alpha release.
-#
-# $EndLog$
-#
+##########################################################################
 
 print "1..5\n";
 
@@ -83,4 +73,3 @@ ok 4, contains($file, 'error3 string$');
 ok 5, !contains($file, '> error3 string$');
 
 cleanlog;
-

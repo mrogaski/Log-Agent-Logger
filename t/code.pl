@@ -1,18 +1,16 @@
+#!./perl
+###########################################################################
 #
-# $Id: code.pl,v 0.1 2000/11/06 20:14:13 ram Exp $
+#   code.t
 #
-#  Copyright (c) 2000, Raphael Manfredi
-#  
-#  You may redistribute only under the terms of the Artistic License,
-#  as specified in the README file that comes with the distribution.
+#   Copyright (C) 1999-2000 Raphael Manfredi.
+#   Copyright (C) 2015 Mark Rogaski, mrogaski@cpan.org;
+#   all rights reserved.
 #
-# HISTORY
-# $Log: code.pl,v $
-# Revision 0.1  2000/11/06 20:14:13  ram
-# Baseline for first Alpha release.
+#   See the README file included with the
+#   distribution for license information.
 #
-# $EndLog$
-#
+##########################################################################
 
 sub ok {
 	my ($num, $ok) = @_;
@@ -34,4 +32,3 @@ sub contains {
 }
 
 1;
-
