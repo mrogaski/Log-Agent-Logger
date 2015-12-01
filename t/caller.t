@@ -68,8 +68,8 @@ my $notice_str = sprintf("%.4d", $show_notice);
 
 ok 1, contains($file, "error string <main::show_error,$error_str>");
 ok 2, contains($file, "notice string <main::show_notice,$notice_str>");
-ok 3, contains($file, '<nothing> error2 string$');
-ok 4, contains($file, 'error3 string$');
-ok 5, !contains($file, '> error3 string$');
+ok 3, contains($file, '<nothing> error2 string');
+ok 4, contains($file, 'error3 string');
+ok 5, !contains($file, '> error3 string');
 
 cleanlog;

@@ -48,7 +48,7 @@ $log->err("error string");
 $log->tags->append($t2);
 $log->warn("warn string");
 
-ok 1, contains($file, '<tag #1> error string$');
-ok 2, contains($file, '<tag #1> warn string <tag #2>$');
+ok 1, contains($file, '<tag #1> error string');
+ok 2, contains($file, '<tag #1> warn string <tag #2>');
 
 cleanlog;
