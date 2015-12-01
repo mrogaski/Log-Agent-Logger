@@ -11,16 +11,27 @@
 #
 ##########################################################################
 
+use 5.006;
+use strict;
+use warnings;
 use Module::Build;
-my $build = Module::Build->new
-(
-  module_name         => 'Log::Agent::Logger',
-  dist_version_from   => 'Logger.pm',
-  license             => 'artistic_2',
-  requires            => {
-		'Getargs::Long' => '0.103',
-		'Log::Agent'    => '0.208'
-  },
-  create_makefile_pl  => 'traditional'
+
+my $builder = Module::Build->new(
+    module_name         => 'Log::Agent::Logger',
+    license             => 'artistic_2',
+    dist_author         => q{Mark Rogaski <mrogaski@cpan.org>},
+    dist_version_from   => 'lib/Log/Agent/Logger.pm',
+    license             => 'artistic_2',
+    release_status      => 'stable',
+    configure_requires => {
+        'Module::Build' => 0,
+    },
+    requires => {
+        'Getargs::Long' => '0.103',
+        'Log::Agent'    => '0.208'
+    },
+    add_to_cleanup     => [ 'Log-Agent-Logger-*' ],
+    create_makefile_pl => 'traditional',
 );
-$build->create_build_script;
+
+$builder->create_build_script();
