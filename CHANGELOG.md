@@ -1,10 +1,11 @@
 # Change Log
 
-## 0.200 - Unreleased
+## [0.200] - 2015-12-01
 ### Added
 - Added CPAN metadata files.
 
 ### Changed
+- Converted build to Module::Build.
 - Converted change log to Markdown.
 
 ### Fixed
@@ -23,3 +24,5 @@
 
 ## 0.100 - 2000-11-03
 Initial revision.
+
+[0.200]: https://github.com/mrogaski/Log-Agent-Logger/compare/v0.101...v0.200
