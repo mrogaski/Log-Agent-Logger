@@ -567,9 +567,10 @@ for the operations that can be performed on that object.
 
 =back
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-Raphael Manfredi F<E<lt>Raphael_Manfredi@pobox.comE<gt>>
+Raphael Manfredi (Raphael_Manfredi@pobox.com)
+Mark Rogaski (mrogaski@cpan.org)
 
 =head1 SEE ALSO
 
