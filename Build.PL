@@ -21,5 +21,6 @@ my $build = Module::Build->new
 		'Getargs::Long' => '0.103',
 		'Log::Agent'    => '0.208'
   },
+  create_makefile_pl  => 'traditional'
 );
 $build->create_build_script;
