@@ -8,6 +8,3 @@ t/caller.t		  Test caller information
 t/code.pl			  Library for tests
 t/priority.t	  Test -priority settings
 t/tags.t			  Test log message tags
-Makefile.PL
-META.yml
-META.json
