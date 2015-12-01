@@ -1,11 +1,10 @@
-README                           The main README file
-MANIFEST                         This list
-ChangeLog                        List of changes
-Makefile.PL                      Generic Makefile template
-Logger.pm                        Application logging interface
-patchlevel.h                     Records the current patchlevel
-t/basic.t                        Basic logging tests
-t/caller.t                       Test caller information
-t/code.pl                        Library for tests
-t/priority.t                     Test -priority settings
-t/tags.t                         Test log message tags
+Build.PL
+CHANGELOG.md
+lib/Log/Agent/Logger.pm
+MANIFEST			This list of files
+README
+t/basic.t
+t/caller.t
+t/code.pl
+t/priority.t
+t/tags.t

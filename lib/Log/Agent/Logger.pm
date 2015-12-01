@@ -1,25 +1,16 @@
+#!./perl
+###########################################################################
 #
-# $Id: Logger.pm,v 0.1.1.1 2001/04/11 16:13:53 ram Exp $
+#   Logger.pm
 #
-#  Copyright (c) 2000, Raphael Manfredi
-#  
-#  You may redistribute only under the terms of the Artistic License,
-#  as specified in the README file that comes with the distribution.
+#   Copyright (C) 1999-2000 Raphael Manfredi.
+#   Copyright (C) 2015 Mark Rogaski, mrogaski@cpan.org;
+#   all rights reserved.
 #
-# HISTORY
-# $Log: Logger.pm,v $
-# Revision 0.1.1.1  2001/04/11 16:13:53  ram
-# patch1: now relies on Getargs::Long for argument parsing
-# patch1: new -caller argument to customize caller tracing
-# patch1: new -priority argument to customize priority tracing
-# patch1: new -tags argument to add user-defined tags in the logs
-# patch1: updated version number
+#   See the README file included with the
+#   distribution for license information.
 #
-# Revision 0.1  2000/11/06 20:14:13  ram
-# Baseline for first Alpha release.
-#
-# $EndLog$
-#
+##########################################################################
 
 use strict;
 
@@ -28,7 +19,8 @@ package Log::Agent::Logger;
 
 use vars qw($VERSION);
 
-$VERSION = '0.101';
+our $VERSION = '0.200';
+$VERSION = eval $VERSION;
 
 use Log::Agent;
 use Log::Agent::Formatting qw(tag_format_args);
@@ -323,7 +315,7 @@ Log::Agent::Logger - a logging interface
 =head1 SYNOPSIS
 
  require Log::Agent::Logger;
- 
+
  my $log = Log::Agent::Logger->make(
      -channel    => $chan,
      -max_prio   => 'info',
@@ -575,9 +567,10 @@ for the operations that can be performed on that object.
 
 =back
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-Raphael Manfredi F<E<lt>Raphael_Manfredi@pobox.comE<gt>>
+Raphael Manfredi (Raphael_Manfredi@pobox.com)
+Mark Rogaski (mrogaski@cpan.org)
 
 =head1 SEE ALSO
 
